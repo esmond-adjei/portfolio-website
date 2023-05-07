@@ -1,6 +1,8 @@
-@import "./components-css/utility.css";
-@import "./components-css/global.css";
+/* defaults */
+@import "global.css";
+@import "utility.css";
 
-@import "./components-css/header.css";
-@import "./components-css/mainview.css";
-@import "./components-css/taskinput.css";
+/* components */
+@import "./component-styles/Header.css";
+@import "./component-styles/Billboard.css";
+@import "./component-styles/Content.css";
