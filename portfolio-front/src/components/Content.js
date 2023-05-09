@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 // import BlogPosts from './BlogPosts';
 // import Interests from './Interests';
 
-const MainContent = () => {
+function MainContent() {
     return (
         <Container fluid>
             <Row>

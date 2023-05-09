@@ -8,6 +8,7 @@ import './style/custom.css';
 import Header from './components/Header';
 import Billboard from './components/Billboard';
 import MainContent from './components/Content';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Billboard />
       <MainContent />
+      <Footer />
     </div>
   );
 }
