@@ -1,4 +1,10 @@
-.profile-column {
+.main_cotent {
+    display: flex;
+    justify-content: space-around;
+    min-height: 50vh;
+}
+
+/* .profile__column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +13,7 @@
     padding: 20px;
 }
 
-.profile-column img {
+.profile__column img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -15,48 +21,48 @@
     margin-bottom: 20px;
 }
 
-.profile-column h3 {
+.profile__column h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.profile-column p {
+.profile__column p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.content-column {
+.content__column {
     background-color: #FFFFFF;
     padding: 20px;
 }
 
-.content-column h2 {
+.content__column h2 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
-.content-column .card {
+.content__column .card {
     margin-bottom: 30px;
 }
 
-.content-column .card-body h4 {
+.content__column .card-body h4 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.content-column .card-body p {
+.content__column .card-body p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
-    .profile-column {
+    .profile__column {
         order: 2;
         margin-top: 30px;
     }
 
-    .content-column {
+    .content__column {
         order: 1;
     }
-}
+} */
