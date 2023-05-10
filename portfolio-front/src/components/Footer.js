@@ -2,13 +2,13 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer>
             <div className="footer__content">
                 <p>Copyright © 2023</p>
                 <ul className="footer__links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/#">Home</a></li>
+                    <li><a href="/#">About</a></li>
+                    <li><a href="/#">Contact</a></li>
                 </ul>
             </div>
         </footer>

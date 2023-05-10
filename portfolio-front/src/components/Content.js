@@ -16,17 +16,17 @@ function MainContent() {
             </div>
 
             <div className='content__column'>
+                    <h2>PROJECTS</h2>
                 <div className='content__projects'>
-                    <p>PROJECTS</p>
                 </div>
+                    <h2>SKILLS</h2>
                 <div className='content__skills'>
-                    <p>SKILLS</p>
                 </div>
+                    <h2>BLOG</h2>
                 <div className='content__blog'>
-                    <p>BLOG</p>
                 </div>
+                    <h2>INTERESTS</h2>
                 <div className='content__interests'>
-                    <p>INTERESTS</p>
                 </div>
             </div>
         </div>
