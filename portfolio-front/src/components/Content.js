@@ -10,13 +10,24 @@ import React from 'react';
 
 function MainContent() {
     return (
-        <div className='main_content'>
+        <div className='main-content'>
             <div className='profile__column'>
                 <p>profile content</p>
             </div>
 
             <div className='content__column'>
-                <p>main content</p>
+                <div className='content__projects'>
+                    <p>PROJECTS</p>
+                </div>
+                <div className='content__skills'>
+                    <p>SKILLS</p>
+                </div>
+                <div className='content__blog'>
+                    <p>BLOG</p>
+                </div>
+                <div className='content__interests'>
+                    <p>INTERESTS</p>
+                </div>
             </div>
         </div>
     );

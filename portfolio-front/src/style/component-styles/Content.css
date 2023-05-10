@@ -1,7 +1,27 @@
-.main_cotent {
+.main-content {
     display: flex;
     justify-content: space-around;
     min-height: 50vh;
+}
+
+.main-content > div {
+    min-width: 10vh;
+    background-color: #fff;
+}
+
+.profile__column, .content__column {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.profile__column {
+    width: 20%;
+    background-color: #fff;
+}
+
+.content__column {
+    width: 80%;
+    border: 1px solid #3d3d3d;
 }
 
 /* .profile__column {
