@@ -1,4 +1,6 @@
 import React from 'react';
+import Card from './Card';
+import cardImage from '../images/kid-engineer.jpg';
 // import { Container, Row, Col } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,6 +11,20 @@ import React from 'react';
 // import Interests from './Interests';
 
 function MainContent() {
+
+    const cardData = {
+        imageSrc: cardImage,
+        title: 'Example Project',
+        icons: [
+          "fa-brands fa-square-js",
+          "fa-brands fa-square-js",
+          "fa-brands fa-square-js"
+        ],
+        description: 'This is an example project description.',
+        readMoreLink: 'https://example.com/read-more',
+        viewProjectLink: 'https://example.com/view-project',
+      };
+
     return (
         <div className='main-content'>
             <div className='profile__column'>
@@ -18,6 +34,14 @@ function MainContent() {
             <div className='content__column'>
                     <h2>PROJECTS</h2>
                 <div className='content__projects'>
+                <Card
+                    imageSrc={cardData.imageSrc}
+                    title={cardData.title}
+                    icons={cardData.icons}
+                    description={cardData.description}
+                    readMoreLink={cardData.readMoreLink}
+                    viewProjectLink={cardData.viewProjectLink}
+                />
                 </div>
                     <h2>SKILLS</h2>
                 <div className='content__skills'>
@@ -34,31 +58,3 @@ function MainContent() {
 };
 
 export default MainContent;
-
-        // <Container fluid>
-        //     <Row>
-        //         <Col md={3}>
-        //             <p>Profile</p>
-        //         </Col>
-        //         <Col md={9}>
-        //             <Row>
-        //                 <Col>
-        //                     <p>Projects </p>
-        //                 </Col>
-        //             </Row>
-        //             <Row>
-        //                 <Col md={6}>
-        //                     <p>Skills and Tools</p>
-        //                 </Col>
-        //                 <Col md={6}>
-        //                     <p>Blog Posts</p>
-        //                 </Col>
-        //             </Row>
-        //             <Row>
-        //                 <Col>
-        //                     <p>Interests</p>
-        //                 </Col>
-        //             </Row>
-        //         </Col>
-        //     </Row>
-        // </Container>

@@ -7,3 +7,6 @@
 @import "./component-styles/Billboard.css";
 @import "./component-styles/Content.css";
 @import "./component-styles/Footer.css";
+
+/* mini componenets */
+@import "./component-styles/card.css";
