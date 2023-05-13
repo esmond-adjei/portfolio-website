@@ -5,11 +5,6 @@ import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
 // import { Container, Row, Col } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import Profile from './Profile';
-// import Projects from './Projects';
-// import SkillsTools from './SkillsTools';
-// import BlogPosts from './BlogPosts';
-// import Interests from './Interests';
 
 function MainContent() {
 
