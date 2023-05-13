@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import cardImage from '../images/kid-engineer.jpg';
+import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
 // import { Container, Row, Col } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,9 +17,9 @@ function MainContent() {
         imageSrc: cardImage,
         title: 'Example Project',
         icons: [
-          "fa-brands fa-square-js",
-          "fa-brands fa-square-js",
-          "fa-brands fa-square-js"
+          faSquareJs,
+          faSquareJs,
+          faSquareJs
         ],
         description: 'This is an example project description.',
         readMoreLink: 'https://example.com/read-more',

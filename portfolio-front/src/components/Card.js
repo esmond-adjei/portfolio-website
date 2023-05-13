@@ -5,10 +5,12 @@ import { faReadme } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 
+// {/* <img src={imageSrc} alt="Card"/> */}
 const Card = ({ imageSrc, title, icons, description, readMoreLink, viewProjectLink }) => {
   return (
     <div className="card">
-      <img src={imageSrc} alt="Card" className="card__image" />
+        <div className='card__image' style={{backgroundImage: `url(${imageSrc})`}}> 
+        </div>
       <div className="card__details">
         <h2 className="card__title">{title}</h2>
         <div className="card__icons">
@@ -20,11 +22,9 @@ const Card = ({ imageSrc, title, icons, description, readMoreLink, viewProjectLi
         <div className="card__links">
           <a href={readMoreLink} className="card__link">
             <FontAwesomeIcon icon={faReadme} className="card__link-icon" />
-            Read More
           </a>
           <a href={viewProjectLink} className="card__link">
             <FontAwesomeIcon icon={faExternalLinkAlt} className="card__link-icon" />
-            View Project
           </a>
         </div>
       </div>
