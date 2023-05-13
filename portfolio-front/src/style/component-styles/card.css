@@ -3,7 +3,9 @@
     border-radius: 10px;
     box-shadow: var(--card-shadow);
     padding: 10px;
-    width: 500px;
+    max-width: 720px;
+    min-width: 360px;
+    margin: 10px;
 }
 
 .card__image {
@@ -11,12 +13,12 @@
     background-position: center;
     border-radius: 10px;
     height: 250px;
-    width: 60%;
+    width: 55%;
 }
 
 .card__details {
     flex: 1 1;
-    padding: 0px 0 0 9px;
+    padding: 0px 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,13 +26,30 @@
 
 .card__title {
     font-size: 24px;
+    position: relative;
     margin: 0;
+}
+
+.card__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    width: 50%;
+    border-bottom: 5px solid #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.card__title::after:hover {
+    width: 75%;
 }
 
 .card__icons {
     display: flex;
     align-items: center;
     color: var(--dark-grey);
+    margin: 5px 0;
     background-color: #f2f2f2;
     border: 2px solid #eee;
     padding: 5px;
@@ -46,10 +65,12 @@
 svg.svg-inline--fa.fa-square-js.card__icon {
     height: 30px;
 }
+
 .card__description {
     margin: 0;
     font-size: 14px;
     height: 100px;
+    margin: 5px 0;
 }
 
 .card__links {

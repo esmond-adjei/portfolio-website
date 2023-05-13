@@ -21,7 +21,7 @@ function MainContent() {
           faSquareJs,
           faSquareJs
         ],
-        description: 'This is an example project description.',
+        description: 'This is an example project description.\nDon\'t mess with this',
         readMoreLink: 'https://example.com/read-more',
         viewProjectLink: 'https://example.com/view-project',
       };
@@ -35,6 +35,22 @@ function MainContent() {
             <div className='content__column'>
                     <h2>PROJECTS</h2>
                 <div className='content__projects'>
+                <Card
+                    imageSrc={cardData.imageSrc}
+                    title={cardData.title}
+                    icons={cardData.icons}
+                    description={cardData.description}
+                    readMoreLink={cardData.readMoreLink}
+                    viewProjectLink={cardData.viewProjectLink}
+                />
+                <Card
+                    imageSrc={cardData.imageSrc}
+                    title={cardData.title}
+                    icons={cardData.icons}
+                    description={cardData.description}
+                    readMoreLink={cardData.readMoreLink}
+                    viewProjectLink={cardData.viewProjectLink}
+                />
                 <Card
                     imageSrc={cardData.imageSrc}
                     title={cardData.title}

@@ -23,11 +23,16 @@
 }
 
 .content__column > div {
+    padding: 24px;
     margin-bottom: 30px;
     min-height: 300px;
     border-radius: 10px;
     background-color: #fff;
+    display: flex;
     border: 1px solid var(--dark-grey);
+    overflow: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .content__column > h2 {
