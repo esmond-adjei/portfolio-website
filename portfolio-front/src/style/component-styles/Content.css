@@ -12,8 +12,10 @@
 
 .profile__column {
     width: 20%;
+    height: fit-content;
+    position: sticky;
+    top: 13%;
     padding: 24px 13px;
-    background-color: #eee;
 }
 
 .content__column {
@@ -24,9 +26,13 @@
 .category {
     padding: 24px 52px;
     margin-bottom: 30px;
-    min-height: 300px;
     border-radius: 10px;
-    background-color: #eee;
+}
+
+.category, .profile__column {
+    min-height: 300px;
+    border: 1px solid #eee;
+    background-color: #f8f8f8;
     overflow: auto;
 }
 
@@ -43,7 +49,7 @@
     bottom: -6px;
     border-radius: 5px;
     width: 50%;
-    border-bottom: 5px solid #2c3e50;
+    border-bottom: 5px solid var(--primary-color);
     transition: all 0.3s ease;
 }
 
@@ -51,6 +57,7 @@
 @media (max-width: 767px) {
     .main-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .profile__column, .content__column {
@@ -61,6 +68,7 @@
         height: 200px;
         margin: 0 0 30px 0;
         border-radius: 0 0 10px 10px;
+        position: initial;
     }
 
     nav ul {

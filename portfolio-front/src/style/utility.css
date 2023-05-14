@@ -12,29 +12,6 @@ header,
     cursor: pointer;
 }
 
-/* .option-item {
-    flex-direction: column;
-    padding: 5px;
-    text-align: center;
-    font-size: 12px;
-    color: var(--light-text);
-    background-color: var(--secondary-color);
-} */
-
-/* .option-item::-webkit-calendar-picker-indicator {
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0;
-    padding: 3px;
-    border-radius: 10px;
-    filter: invert(80%);
-}
-
-.option-item::-webkit-calendar-picker-indicator:hover {
-    background-color: #efbf7f;
-} */
-
-/* components states */
 .icon.icon-n-text:hover,
 .option-item:hover {
     transition: 300ms;
@@ -51,8 +28,6 @@ header,
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
-    /* min-width: 30px;
-    min-height: 30px; */
 }
 
 .clear-button>.icon-n-text.icon {
@@ -80,22 +55,3 @@ header,
     color: var(--yellow);
     background-color: var(--wine);
 }
-
-/* WITH THE HELP OF CHATGPT */
-/* Style the scrollbar */
-/* ::-webkit-scrollbar {
-    width: 7px;
-    background-color: inherit;
-} */
-
-/* Style the thumb (the part of the scrollbar that you can drag) */
-/* ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: var(--light-text);
-} */
-
-/* Style the thumb when hovered over */
-/* ::-webkit-scrollbar-thumb:hover {
-    transition: 300ms;
-    background-color: var(--grey);
-} */

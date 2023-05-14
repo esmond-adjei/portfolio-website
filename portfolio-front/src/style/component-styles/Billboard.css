@@ -1,8 +1,8 @@
 .banner {
+    height: 720px;
     background-image: url('../../images/kid-engineer.jpg');
     background-position: center;
     background-size: cover;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,10 +12,14 @@
     text-align: left;
     color: #fff;
     max-width: 700px;
+
+    /* xxx */
+    position: absolute;
+    left: 10%;
 }
 
 .banner-text h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 20px;
 }
 
@@ -24,17 +28,26 @@
     margin-bottom: 30px;
 }
 
+.banner-image {
+    width: 45%;
+    transform: rotateZ(90deg);
+    position: absolute;
+    right: -56px;
+    z-index: 10;
+}
+
 .btn {
     background-color: #fff;
     color: #333;
     font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #f2f2f2;
+    background-color: var(--secondary-color);
+    color: #eee;
 }

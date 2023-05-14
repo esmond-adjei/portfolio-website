@@ -1,4 +1,5 @@
 import React from 'react';
+import bannerImage from '../images/banner-image.png'
 
 function Billboard() {
     return (
@@ -8,6 +9,7 @@ function Billboard() {
                 <p>Discover my work and learn more about what I do.</p>
                 <button className="btn">View Portfolio</button>
             </div>
+            <img src={bannerImage} alt="banner" className='banner-image' />
         </div>
     );
 }
