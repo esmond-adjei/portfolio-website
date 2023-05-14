@@ -5,7 +5,9 @@
     padding: 10px;
     max-width: 720px;
     min-width: 360px;
-    margin: 10px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #fff;
 }
 
 .card__image {
@@ -28,21 +30,6 @@
     font-size: 24px;
     position: relative;
     margin: 0;
-}
-
-.card__title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    border-radius: 5px;
-    width: 50%;
-    border-bottom: 5px solid #2c3e50;
-    transition: all 0.3s ease;
-}
-
-.card__title::after:hover {
-    width: 75%;
 }
 
 .card__icons {

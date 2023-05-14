@@ -24,12 +24,12 @@ function MainContent() {
     return (
         <div className='main-content'>
             <div className='profile__column'>
-                <p>profile content</p>
+                <h2 className='category__heading'>Profile</h2>
             </div>
 
             <div className='content__column'>
-                    <h2>PROJECTS</h2>
-                <div className='content__projects'>
+                <div className='category'>
+                    <h2 className='category__heading'>PROJECTS</h2>
                 <Card
                     imageSrc={cardData.imageSrc}
                     title={cardData.title}
@@ -55,14 +55,14 @@ function MainContent() {
                     viewProjectLink={cardData.viewProjectLink}
                 />
                 </div>
-                    <h2>SKILLS</h2>
-                <div className='content__skills'>
+                <div className='category'>
+                    <h2 className='category__heading'>SKILLS</h2>
                 </div>
-                    <h2>BLOG</h2>
-                <div className='content__blog'>
+                <div className='category'>
+                    <h2 className='category__heading'>BLOG</h2>
                 </div>
-                    <h2>INTERESTS</h2>
-                <div className='content__interests'>
+                <div className='category'>
+                    <h2 className='category__heading'>INTERESTS</h2>
                 </div>
             </div>
         </div>
