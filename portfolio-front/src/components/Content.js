@@ -65,6 +65,8 @@ function MainContent() {
                     <h2 className='category__heading'>INTERESTS</h2>
                 </div>
             </div>
+
+            <div className='back-to-top'>^</div>
         </div>
     );
 };

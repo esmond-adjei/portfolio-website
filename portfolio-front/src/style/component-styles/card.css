@@ -11,7 +11,7 @@
     transition: all 0.3s ease-out;
 }
 .card:hover {
-    transform: rotateZ(1deg);
+    transform: scale(1.01);
 }
 
 .card__image {
