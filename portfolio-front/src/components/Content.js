@@ -1,9 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import cardImage from '../images/kid-engineer.jpg';
-import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
-// import { Container, Row, Col } from 'react-bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { faSquareJs, faPython } from '@fortawesome/free-brands-svg-icons';
 
 
 function MainContent() {
@@ -13,7 +11,7 @@ function MainContent() {
         title: 'Example Project',
         icons: [
           faSquareJs,
-          faSquareJs,
+          faPython,
           faSquareJs
         ],
         description: 'This is an example project description.\nDon\'t mess with this',
@@ -25,6 +23,11 @@ function MainContent() {
         <div className='main-content'>
             <div className='profile__column'>
                 <h2 className='category__heading'>Profile</h2>
+                <div className='profile__content'>
+                    <div className='profile__picture'></div>
+                    <div className='profile__contact'></div>
+                    <div className='profile__about'></div>
+                </div>
             </div>
 
             <div className='content__column'>

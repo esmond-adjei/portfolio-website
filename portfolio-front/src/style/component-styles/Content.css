@@ -32,8 +32,12 @@
 .category, .profile__column {
     min-height: 300px;
     border: 1px solid #eee;
-    background-color: #f8f8f8;
+    background-color: #fff;
     overflow: auto;
+}
+
+body {
+    background-color: #f8f8f8;
 }
 
 .category__heading {
@@ -70,6 +74,25 @@
     opacity: 100%;
 }
 
+.profile__content {
+    display: flex
+}
+
+.profile__picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+}
+
+.profile__contact {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
 
 @media (max-width: 767px) {
     .main-content {
