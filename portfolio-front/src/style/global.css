@@ -32,7 +32,8 @@
 }
 
 body {
-    font-family: 'poppins', 'montserrat', monospace;
+    margin: 0;
+    font-family: 'montserrat', 'poppins', sans-serif;
     background-color: #eeeeee;
     font-size: 16px;
 }

@@ -40,27 +40,23 @@
 }
 
 .card__icons {
-    margin: 5px 0;
-    padding: 5px 15px;
+    margin: 4px 0;
+    padding: 8px 16px;
+    border-radius: 64px;
+    background-color: #f2f2f2;
+
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    gap: 16px;
+}
+
+.card__icons svg {
     color: var(--dark-grey);
-    border: 2px solid #eee;
-    background-color: #f2f2f2;
+    height: 24px;
+    transition: color 0.4s ease;
 }
 
-.card__icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-svg.svg-inline--fa.fa-square-js.card__icon {
-    height: 25px;
-    transition: color 0.3s ease;
-}
-svg.svg-inline--fa.fa-square-js.card__icon:hover {
+.card__icons svg:hover {
     color: var(--primary-color);
 }
 

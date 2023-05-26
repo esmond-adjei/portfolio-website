@@ -1,6 +1,4 @@
 
-import './App.css';
-
 // import styles
 import './style/custom.css';
 
