@@ -53,13 +53,16 @@ section {
 }
 
 .profile-card {
-    width: 300px;
+    width: 320px;
+    min-height: 320px;
     padding: 8px;
     border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transition: all 0.4s ease;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .profile-card:hover {
     background-color: var(--primary-color);
@@ -86,6 +89,23 @@ section {
 
 .profile__text {
     width: 56%;
+    font-family: poppins;
+}
+
+.profile__text h2 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    color: var(--light-secondary);
+}
+
+.profile__text small {
+    color: var(--light-text);
+}
+
+.profile__text p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: var(--dark-text);
 }
 
 /* -------------- RESPONSIVE -------------- */
