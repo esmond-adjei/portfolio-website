@@ -3,9 +3,11 @@
     background-image: url('../../images/kid-engineer.jpg');
     background-position: center;
     background-size: cover;
+    
     display: flex;
-    justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .banner-text {
@@ -25,6 +27,7 @@
 
 .banner-text p {
     font-size: 1.5rem;
+    font-weight: 272;
     margin-bottom: 30px;
 }
 
@@ -36,18 +39,25 @@
     z-index: 10;
 }
 
+.banner_overlay {
+    position: absolute;
+    width: 100%;
+    height: 720px;
+    background: linear-gradient(45deg, hsl(39.89deg 100% 36.27% / 91%) 38%, hsl(212.24deg 95.2% 48.59% / 60%));
+}
+
 .btn {
-    background-color: #fff;
     color: #333;
     font-size: 1.2rem;
     border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
+    border-radius: 24px;
+    padding: 8px 24px;
     cursor: pointer;
+    background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: #eee;
 }

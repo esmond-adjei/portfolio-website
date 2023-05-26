@@ -20,18 +20,18 @@ function MainContent() {
       };
 
     return (
-        <div className='main-content'>
-            <div className='profile__column'>
+        <main className='main-content'>
+            <section className='profile__column'>
                 <h2 className='category__heading'>Profile</h2>
                 <div className='profile__content'>
                     <div className='profile__picture'></div>
                     <div className='profile__contact'></div>
                     <div className='profile__about'></div>
                 </div>
-            </div>
+            </section>
 
-            <div className='content__column'>
-                <div className='category'>
+            <section className='content__column'>
+                <section className='category'>
                     <h2 className='category__heading'>PROJECTS</h2>
                 <Card
                     imageSrc={cardData.imageSrc}
@@ -57,20 +57,20 @@ function MainContent() {
                     readMoreLink={cardData.readMoreLink}
                     viewProjectLink={cardData.viewProjectLink}
                 />
-                </div>
-                <div className='category'>
+                </section>
+                <section className='category'>
                     <h2 className='category__heading'>SKILLS</h2>
-                </div>
-                <div className='category'>
+                </section>
+                <section className='category'>
                     <h2 className='category__heading'>BLOG</h2>
-                </div>
-                <div className='category'>
+                </section>
+                <section className='category'>
                     <h2 className='category__heading'>INTERESTS</h2>
-                </div>
-            </div>
+                </section>
+            </section>
 
             <div className='back-to-top'>^</div>
-        </div>
+        </main>
     );
 };
 

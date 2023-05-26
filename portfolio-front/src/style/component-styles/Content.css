@@ -15,7 +15,7 @@
     height: fit-content;
     position: sticky;
     top: 13%;
-    padding: 24px 13px;
+    padding: 24px 16px;
 }
 
 .content__column {
@@ -24,20 +24,16 @@
 }
 
 .category {
-    padding: 24px 52px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    padding: 24px 56px;
+    margin-bottom: 32px;
+    border-radius: 8px;
 }
 
 .category, .profile__column {
-    min-height: 300px;
+    min-height: 304px;
     border: 1px solid #eee;
     background-color: #fff;
     overflow: auto;
-}
-
-body {
-    background-color: #f8f8f8;
 }
 
 .category__heading {
@@ -59,11 +55,11 @@ body {
 
 .back-to-top {
     position: fixed;
-    bottom: 5%;
+    bottom: 4%;
     right: 1.5%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
     background-color: #fdeec9;
     box-shadow: var(--card-shadow);
     cursor: pointer;
@@ -84,7 +80,7 @@ body {
 .profile__picture {
     width: 100px;
     height: 100px;
-    border-radius: 50px;
+    border-radius: 48px;
     background-color: var(--secondary-color);
 }
 
