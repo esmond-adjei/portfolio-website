@@ -31,6 +31,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'poppins', 'montserrat', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* development styles */
 .dev--border {
     border: 3px solid green;
