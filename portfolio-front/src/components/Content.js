@@ -45,7 +45,7 @@ function MainContent() {
                         </div>
                     </div>
                     <div className='profile__text'>
-                        <h2>Esmond A.</h2>
+                        <h2>Esmond <span className='stroked'>A.</span></h2>
                         <small>(aka <i>x'mon</i>)</small>
                         <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -17,9 +17,10 @@
 
     /* SHADOWS & GRADIENTS */
     --raw-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    --card-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    --card-shadow: 0px 3px 6px 0px rgba(140, 149, 159, 0.15);
     --background-gradient: linear-gradient(90deg, rgba(180, 34, 195, 0.33) 0%, rgba(45, 253, 195, 0.17) 100%);
     --light-gradient: linear-gradient(158deg, rgba(204, 204, 204, 1) 0%, rgba(172, 133, 175, 1) 55%, rgba(80, 80, 80, 1) 100%);
+    --orange-gradient: radial-gradient( circle farthest-corner at 64% 24%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
     --multiple-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
                         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
                         0 12.5px 10px rgba(0, 0, 0, 0.06),

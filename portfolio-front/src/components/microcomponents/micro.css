@@ -16,9 +16,14 @@
     float: left;
     margin-right: 16px;
     border-radius: 6px;
-    box-shadow: var(--multiple-shadow);
     color: var(--primary-color);
     background-color: rgb(209, 161, 19);
+    background: var(--orange-gradient);
+    transition: all 0.4s ease;
+}
+
+.contact-slip:hover .icon {
+    box-shadow: var(--multiple-shadow);
 }
 
 .contact-slip small {

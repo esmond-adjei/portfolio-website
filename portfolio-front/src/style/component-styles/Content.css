@@ -2,9 +2,9 @@ section {
     padding: 48px 96px;
     min-height: 320px;
     background-color: #ffffff;
+    border-bottom: 1px solid #f3f3f3;
     
     /* xxx */
-    /* border: 1px solid #333333;
     /* margin-bottom: 32px; */
 }
 
@@ -57,7 +57,7 @@ section {
 .profile-card {
     width: 320px;
     min-height: 320px;
-    padding: 8px;
+    padding: 16px 8px;
     border-radius: 16px;
     background-color: #fefefe;
     /* border: 1px solid var(--light-text); */
@@ -66,10 +66,10 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 /* .profile-card:hover {
-    background-color: var(--primary-color);
+    box-shadow: var(--multiple-shadow);
 } */
 
 .profile__picture {
@@ -100,6 +100,11 @@ section {
     margin: 0 0 8px;
     font-size: 2rem;
     color: var(--light-secondary);
+    position: relative;
+}
+.stroked {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--light-secondary);
 }
 
 .profile__text small {
