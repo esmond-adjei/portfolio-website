@@ -25,8 +25,6 @@ function MainContent() {
     return (
         <main className='main-content'>
             <section className='profile'>
-                <h2 className='section__heading'>PROFILE</h2>
-
                 <div className='profile__section'>
                     <div className='profile-card'>
                         <div className='profile__picture'></div>

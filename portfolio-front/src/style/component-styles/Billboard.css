@@ -46,6 +46,7 @@
     background: linear-gradient(45deg, hsl(39.89deg 100% 36.27% / 91%) 38%, hsl(212.24deg 95.2% 48.59% / 60%));
 }
 
+/* --------- CTA ------------- */
 .btn {
     color: #333;
     font-size: 1.2rem;
@@ -54,6 +55,7 @@
     padding: 8px 24px;
     cursor: pointer;
     background-color: #fff;
+    box-shadow: var(--multiple-shadow);
     transition: all 0.3s ease-in-out;
 }
 
