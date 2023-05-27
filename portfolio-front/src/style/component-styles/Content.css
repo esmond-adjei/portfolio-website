@@ -1,13 +1,11 @@
 section {
-    margin-bottom: 32px;
     padding: 48px 96px;
     min-height: 320px;
     background-color: #ffffff;
-
+    
     /* xxx */
     /* border: 1px solid #333333;
-     */
-
+    /* margin-bottom: 32px; */
 }
 
 .section__heading {
@@ -51,6 +49,9 @@ section {
 .profile__section {
     display: flex;
     justify-content: space-around;
+    background-color: #f3f3f3;
+    border-radius: 24px;
+    padding: 24px;
 }
 
 .profile-card {
@@ -58,7 +59,8 @@ section {
     min-height: 320px;
     padding: 8px;
     border-radius: 16px;
-    border: 1px solid var(--light-text);
+    background-color: #fefefe;
+    /* border: 1px solid var(--light-text); */
     transition: all 0.4s ease;
     
     display: flex;
@@ -66,9 +68,9 @@ section {
     flex-direction: column;
     justify-content: space-around;
 }
-.profile-card:hover {
+/* .profile-card:hover {
     background-color: var(--primary-color);
-}
+} */
 
 .profile__picture {
     background-image: url('../../images/alex.jpg');
@@ -83,14 +85,14 @@ section {
 
 .profile__contact {
     width: 90%;
-    height: 96px;
+    min-height: 96px;
     margin: 15px 0;
-    background: #f8f8f8;
+    background-color: #f3f3f3;
     border-radius: 10px;
 }
 
 .profile__text {
-    width: 56%;
+    width: 48%;
     font-family: poppins;
 }
 

@@ -5,7 +5,6 @@ import { faReadme } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 
-// {/* <img src={imageSrc} alt="Card"/> */}
 const Card = ({ imageSrc, title, icons, description, readMoreLink, viewProjectLink }) => {
   return (
     <div className="card">

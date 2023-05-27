@@ -1,11 +1,10 @@
 import React from 'react';
 import Card from './Card';
+import Contact from './microcomponents/contact';
 import cardImage from '../images/kid-engineer.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareJs, faPython, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-// {/* <section className='content__column'>
-//         </section> */}
 
 function MainContent() {
 
@@ -34,6 +33,15 @@ function MainContent() {
                             <FontAwesomeIcon icon={faGithub} className='card__icon'/>
                         </div>
                         <div className='profile__contact'>
+                            <Contact icon={<FontAwesomeIcon icon={faLinkedin}/>}
+                                     contactType={'Linkedin'}
+                                     contactDetail={'@esmond-adjei'}/>
+                            <Contact icon={<FontAwesomeIcon icon={faGithub}/>}
+                                     contactType={'GitHub'}
+                                     contactDetail={'@esmond-adjei'}/>
+                            <Contact icon={<FontAwesomeIcon icon={faTwitter}/>}
+                                     contactType={'Twitter'}
+                                     contactDetail={'@xmon_jei'}/>
                         </div>
                     </div>
                     <div className='profile__text'>
