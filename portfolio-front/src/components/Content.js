@@ -26,7 +26,9 @@ function MainContent() {
             <section className='profile'>
                 <div className='profile__section'>
                     <div className='profile-card'>
-                        <div className='profile__picture'></div>
+                        <div className='profile__banner'>
+                            <div className='profile__picture'></div>
+                        </div>
                         <div className='card__icons'>
                             <FontAwesomeIcon icon={faLinkedin} className='card__icon'/>
                             <FontAwesomeIcon icon={faTwitter} className='card__icon'/>
