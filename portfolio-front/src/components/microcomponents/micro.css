@@ -29,3 +29,74 @@
 .contact-slip small {
     color: #9f9f9f;
 }
+
+/* big logo */
+.big-logo {
+    opacity: 24%;
+    transition: all .4s ease-out;
+}
+
+.big-logo:hover {
+    opacity: 80%;
+}
+
+/* --------- square card and square card 2 ----------- */
+.sqCard, .sqCard2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #9f9f9f;
+    box-shadow: 0px 10px 16px -8px;
+    transition: all .35s ease-in;
+    --paragraph-position: 0px;
+}
+
+.sqCard h2, .sqCard2 h2 {
+    position: absolute;
+    margin: 16px;
+    bottom: 32px;
+    font-size: 32px;
+    color: var(--primary-color);
+    transition: all .35s ease-in;
+}
+
+.sqCard p, .sqCard2 p {
+    position: absolute;
+    bottom: -100px;
+    margin: 0;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #efefefdd;
+    background-color: var(--primary-color);
+    transition: all .35s ease-in;
+}
+.sqCard:hover p {
+    bottom: var(--paragraph-position);
+}
+.sqCard:hover h2 {
+    bottom: calc(var(--paragraph-position) + 64px);
+}
+.sqCard:hover {
+    background-size: contain;
+    background-position-x: top;
+}
+
+/* ----------- square card version 2 ---------- */
+.sqCard2 {
+    box-shadow: 0px 4px 4px -2px #9f9f9f;
+    --text-position: 50%;
+}
+
+.sqCard2 h2 {
+    width: 100%;
+    padding: 4px 16px;
+    margin: 0;
+    bottom: var(--text-position);
+    background-color: var(--light-main);
+}
+
+.sqCard2 p {
+    top: var(--text-position);
+    height: var(--text-position);
+}

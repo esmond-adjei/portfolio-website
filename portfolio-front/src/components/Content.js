@@ -1,9 +1,18 @@
 import React from 'react';
 import Card from './Card';
 import Contact from './microcomponents/contact';
+import BigLogo from './microcomponents/bigLogo';
+import Sqcard from './microcomponents/squareCard';
 import cardImage from '../images/kid-engineer.jpg';
+import backImage from '../images/alex.jpg'
+import blogImage from '../images/kid-engineer.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareJs, faPython, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+
+// import {linkedin.svg, square-github.svg, square-twitter.svg} from '../../images';
+import sqLinkedin from '../images/square-linkedin.svg';
+import sqGithub from '../images/square-github.svg';
+import sqTwitter from '../images/square-twitter.svg';
 
 
 function MainContent() {
@@ -23,6 +32,7 @@ function MainContent() {
 
     return (
         <main className='main-content'>
+{/* about */}
             <section className='profile'>
                 <div className='profile__section'>
                     <div className='profile-card'>
@@ -61,10 +71,27 @@ function MainContent() {
                         </p>
                     </div>
                 </div>
-
+            </section>
+{/* skills */}
+            <section className='skills__section'>
+                <h2 className='section__heading'>SKILLS</h2>
+                <div className='skill_logos'>
+                    <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
+                    <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
+                    <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
+                    <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
+                    <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
+                    <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
+                    <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
+                    <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
+                    <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
+                    <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
+                    <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
+                    <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
+                </div>
             </section>
 
-            <section className='category'>
+            <section className='projects__section'>
                 <h2 className='section__heading'>PROJECTS</h2>
                 <Card
                     imageSrc={cardData.imageSrc}
@@ -90,16 +117,36 @@ function MainContent() {
                     readMoreLink={cardData.readMoreLink}
                     viewProjectLink={cardData.viewProjectLink}
                 />
-            
             </section>
-            <section className='category'>
-                <h2 className='section__heading'>SKILLS</h2>
+
+{/* more projects */}
+            <section className='more-projects__section'>
+                <h2 className='section__heading'>More Projects</h2>
+                <div className='carousel_of_cards'>
+                    <Sqcard backImage={backImage} cardType={'sqCard'}/>
+                    <Sqcard backImage={backImage} cardType={'sqCard'}/>
+                    <Sqcard backImage={backImage} cardType={'sqCard'}/>
+                </div>
             </section>
-            <section className='category'>
+
+            <section className='blog__section'>
                 <h2 className='section__heading'>BLOG</h2>
+                <div className='blog_posts'>
+                    <Sqcard backImage={blogImage} cardType={'sqCard2'}/>
+                    <Sqcard backImage={blogImage} cardType={'sqCard2'}/>
+                    <Sqcard backImage={blogImage} cardType={'sqCard2'}/>
+                </div>
             </section>
-            <section className='category'>
+            <section className='interests__section'>
                 <h2 className='section__heading'>INTERESTS</h2>
+                <div className='interests__banner'>
+                    <img src={blogImage} alt="it's cool right" />
+                    <div style={{display: 'inline-flex', gap: '8px'}}>
+                        <span className='control-dot'></span>
+                        <span className='control-dot'></span>
+                        <span className='control-dot'></span>
+                    </div>
+                </div>
             </section>
 
             <div className='back-to-top'>^</div>

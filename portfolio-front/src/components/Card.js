@@ -32,33 +32,3 @@ const Card = ({ imageSrc, title, icons, description, readMoreLink, viewProjectLi
 };
 
 export default Card;
-
-
-// import React from 'react';
-
-// function Card({ imageSrc, title, icons, description, readMoreLink, viewProjectLink }) {
-//   return (
-//     <div className="card">
-      
-//       <img src={imageSrc} alt={title} className="card__image" />
-      
-//       <div className="card__details">
-//         <h2 className="card__title">{title}</h2>
-//         <div className="card__icons">
-//           {/* Render icons here */}
-//           {icons.map((icon, index) => (
-//             <img src={icon} alt={`Icon ${index}`} key={index} />
-//           ))}
-//         </div>
-//         <p className="card__description">{description}</p>
-//         <div className="card__links">
-//           <a href={readMoreLink} target="_blank" rel="noopener noreferrer">Read More</a>
-//           <a href={viewProjectLink} target="_blank" rel="noopener noreferrer">View Project</a>
-//         </div>
-//       </div>
-
-//     </div>
-//   );
-// };
-
-// export default Card;

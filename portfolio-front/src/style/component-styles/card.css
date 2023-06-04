@@ -6,7 +6,7 @@
     padding: 16px;
     border-radius: 16px;
     background-color: #fefefe;
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 4px 4px -2px #999;
     display: flex;
     gap: 16px;
     transition: all 0.3s ease;
@@ -23,9 +23,6 @@
 .card:hover .card__image {
     transform: scale(1.04);
 }
-.card:hover {
-    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
-}
 
 .card__details {
     padding: 0px 12px;
@@ -41,7 +38,6 @@
 }
 
 .card__icons {
-    margin: 56px 4px 0;
     padding: 8px 16px;
     width: fit-content;
     border-radius: 64px;
