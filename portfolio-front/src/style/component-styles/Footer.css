@@ -1,27 +1,29 @@
-footer {
-    padding: 10px;
-}
 
 .footer__content {
-    height: 150px;
-    padding: 10px 50px;
+    margin: 10px;
     color: #fff;
     background-color: var(--primary-color);
+}
+
+.footer__info {
+    padding: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer_copyright {
+    padding: 30px;
+    text-align: center;
 }
 
 .footer__links {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
 .footer__links li {
-    margin: 0 10px;
+    margin: 5px 10px;
 }
 
 .footer__links li a {

@@ -100,3 +100,49 @@
     top: var(--text-position);
     height: var(--text-position);
 }
+
+/* ------------ email forms --------------- */
+.email-form {
+    width: 25%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      border: 2px solid var(--light-main);
+      outline-color: var(--light-main);
+      font-family: 'montserrat', 'open sans';
+      transition: outline-color 400ms ease;
+    }
+    
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: -2px;
+}
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
