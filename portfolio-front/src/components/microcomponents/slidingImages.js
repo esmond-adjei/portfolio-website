@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './micro.css';
+
 
 const SlidingImage = ({ images }) => {
     const [activeIndex, setActiveIndex] = useState(0);

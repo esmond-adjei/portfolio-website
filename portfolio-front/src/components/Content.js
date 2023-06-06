@@ -6,9 +6,14 @@ import Sqcard from './microcomponents/squareCard';
 import SlidingImage from './microcomponents/slidingImages';
 import BackToTopButton from './microcomponents/backToTop';
 
-import cardImage from '../images/kid-engineer.jpg';
-import backImage from '../images/alex.jpg'
-import blogImage from '../images/kid-engineer.jpg'
+import Alex from '../images/alex.jpg'
+import kidEngineer from '../images/kid-engineer.jpg'
+import robotOnDesk from '../images/stock/home-made-robot-desk.jpg';
+import fist from '../images/stock/fist.jpg';
+import militaryRobot from '../images/stock/military-robot-dog.png';
+import sadStudent from '../images/stock/sad-student.jpg';
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareJs, faPython, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -21,7 +26,7 @@ import sqTwitter from '../images/square-twitter.svg';
 function MainContent() {
 
     const cardData = {
-        imageSrc: cardImage,
+        imageSrc: robotOnDesk,
         title: 'Example Project',
         icons: [
           faSquareJs,
@@ -105,7 +110,7 @@ function MainContent() {
                     viewProjectLink={cardData.viewProjectLink}
                 />
                 <Card
-                    imageSrc={cardData.imageSrc}
+                    imageSrc={fist}
                     title={cardData.title}
                     icons={cardData.icons}
                     description={cardData.description}
@@ -113,7 +118,7 @@ function MainContent() {
                     viewProjectLink={cardData.viewProjectLink}
                 />
                 <Card
-                    imageSrc={cardData.imageSrc}
+                    imageSrc={militaryRobot}
                     title={cardData.title}
                     icons={cardData.icons}
                     description={cardData.description}
@@ -126,23 +131,23 @@ function MainContent() {
             <section className='more-projects__section'>
                 <h2 className='section__heading'>More Projects</h2>
                 <div className='carousel_of_cards'>
-                    <Sqcard backImage={backImage} cardType={'sqCard'}/>
-                    <Sqcard backImage={backImage} cardType={'sqCard'}/>
-                    <Sqcard backImage={backImage} cardType={'sqCard'}/>
+                    <Sqcard backImage={militaryRobot} cardType={'sqCard'}/>
+                    <Sqcard backImage={Alex} cardType={'sqCard'}/>
+                    <Sqcard backImage={sadStudent} cardType={'sqCard'}/>
                 </div>
             </section>
 
             <section className='blog__section'>
                 <h2 className='section__heading'>BLOG</h2>
                 <div className='blog_posts'>
-                    <Sqcard backImage={blogImage} cardType={'sqCard2'}/>
-                    <Sqcard backImage={blogImage} cardType={'sqCard2'}/>
-                    <Sqcard backImage={blogImage} cardType={'sqCard2'}/>
+                    <Sqcard backImage={sadStudent} cardType={'sqCard2'}/>
+                    <Sqcard backImage={fist} cardType={'sqCard2'}/>
+                    <Sqcard backImage={kidEngineer} cardType={'sqCard2'}/>
                 </div>
             </section>
             <section className='interests__section'>
                 <h2 className='section__heading'>INTERESTS</h2>
-                <SlidingImage images={[blogImage, backImage]}/>
+                <SlidingImage images={[kidEngineer, robotOnDesk, militaryRobot, fist, sadStudent]}/>
             </section>
             <BackToTopButton />
 

@@ -1,6 +1,7 @@
 
 // import styles
 import './style/custom.css';
+import './components/microcomponents/micro.css';
 
 // import components
 import Header from './components/Header';

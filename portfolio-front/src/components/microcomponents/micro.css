@@ -66,9 +66,13 @@
 
 .sqCard h2, .sqCard2 h2 {
     position: absolute;
-    margin: 16px;
+    /* margin: 16px; */
     bottom: 32px;
     font-size: 32px;
+
+    width: 100%;
+    padding: 4px 16px;
+    background-color: var(--light-main);
     color: var(--primary-color);
     transition: all .40s ease-in-out;
 }
@@ -113,7 +117,7 @@
     bottom: var(--paragraph-position);
 }
 .sqCard:hover h2 {
-    bottom: calc(var(--paragraph-position) + 64px);
+    bottom: calc(var(--paragraph-position) + 56px);
 }
 .sqCard:hover {
     background-size: contain;
@@ -129,9 +133,9 @@
 .sqCard2 h2 {
     width: 100%;
     padding: 4px 16px;
+    background-color: var(--light-main);
     margin: 0;
     bottom: var(--text-position);
-    background-color: var(--light-main);
 }
 
 .sqCard2 .card_text {

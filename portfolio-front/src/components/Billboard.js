@@ -1,6 +1,5 @@
 import React from 'react';
-// import bannerImage from '../images/banner-image.png'
-// <img src={bannerImage} alt="banner" className='banner-image' />
+
 
 function Billboard() {
     return (

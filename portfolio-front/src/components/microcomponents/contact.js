@@ -1,5 +1,5 @@
 import React from 'react';
-import './micro.css';
+
 
 function contact({icon, contactType, contactDetail}) {
     return ( 

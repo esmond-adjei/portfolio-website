@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './micro.css';
+
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +9,6 @@ const BackToTopButton = () => {
     const windowHeight = window.innerHeight;
     const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     const scrolledToBottom = scrollTop + windowHeight >= 0.8*scrollHeight;
-    console.log("scroll height: " + scrollHeight);
 
     setIsVisible(scrolledToBottom);
   };
