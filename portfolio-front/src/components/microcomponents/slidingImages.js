@@ -9,7 +9,7 @@ const SlidingImage = ({ images }) => {
     };
   
     return (
-      <div className="sliding-image-feature">
+      <div className="sliding-image">
         <div className="image-container" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
           {images.map((image, index) => (
             <img
