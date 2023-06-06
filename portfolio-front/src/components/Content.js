@@ -13,7 +13,6 @@ import fist from '../images/stock/fist.jpg';
 import militaryRobot from '../images/stock/military-robot-dog.png';
 import sadStudent from '../images/stock/sad-student.jpg';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareJs, faPython, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
