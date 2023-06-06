@@ -3,6 +3,9 @@ import Card from './Card';
 import Contact from './microcomponents/contact';
 import BigLogo from './microcomponents/bigLogo';
 import Sqcard from './microcomponents/squareCard';
+import SlidingImage from './microcomponents/slidingImages';
+import BackToTopButton from './microcomponents/backToTop';
+
 import cardImage from '../images/kid-engineer.jpg';
 import backImage from '../images/alex.jpg'
 import blogImage from '../images/kid-engineer.jpg'
@@ -139,17 +142,10 @@ function MainContent() {
             </section>
             <section className='interests__section'>
                 <h2 className='section__heading'>INTERESTS</h2>
-                <div className='interests__banner'>
-                    <img src={blogImage} alt="it's cool right" />
-                    <div style={{display: 'inline-flex', gap: '8px'}}>
-                        <span className='control-dot'></span>
-                        <span className='control-dot'></span>
-                        <span className='control-dot'></span>
-                    </div>
-                </div>
+                <SlidingImage images={[blogImage, backImage]}/>
             </section>
+            <BackToTopButton />
 
-            <div className='back-to-top'>^</div>
         </main>
     );
 };

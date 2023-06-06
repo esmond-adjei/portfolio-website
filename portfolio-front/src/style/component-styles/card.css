@@ -2,7 +2,7 @@
     max-width: 720px;
     min-width: 360px;
     margin: auto;
-    margin-top: 24px;
+    margin-top: 40px;
     padding: 16px;
     border-radius: 16px;
     background-color: #fefefe;
@@ -37,10 +37,15 @@
     color: var(--secondary-color);
 }
 
+.card__subtitle {
+    opacity: 80%;
+}
+
 .card__icons {
     padding: 8px 16px;
     width: fit-content;
-    border-radius: 64px;
+    margin: 8px 0;
+    border-radius: 16px;
     background-color: #f2f2f2;
 
     display: flex;
@@ -60,7 +65,7 @@
 
 .card__description {
     color: var(--dark-text);
-    height: 100px;
+    height: 80px;
     margin: 4px 0;
     font-size: 14px;
 }
@@ -68,16 +73,17 @@
 .card__links {
     display: flex;
     justify-content: flex-end;
+    gap: 16px;
 }
 
 .card__link {
-    margin-left: 8px;
-    padding: 4px 8px;
-    border-radius: 4px;
+    /* margin-left: 8px; */
+    padding: 8px 16px;
+    border-radius: 8px;
     text-decoration: none;
     background-color: var(--light-text);
     color: var(--dark-text);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s, color 0.4s ease;
 }
 
 .card__link:hover {

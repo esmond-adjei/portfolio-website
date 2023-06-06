@@ -31,7 +31,7 @@ nav ul {
 
 .nav__links {
     padding: 8px 16px;
-    border-radius: 24px;
+    border-radius: 12px;
     color: var(--dark-text);
     background-color: inherit;
     transition: all 0.2s ease-in-out;

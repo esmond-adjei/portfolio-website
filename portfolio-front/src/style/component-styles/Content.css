@@ -3,9 +3,6 @@ section {
     min-height: 320px;
     background-color: #ffffff;
     border-bottom: 1px solid #f3f3f3;
-    
-    /* xxx */
-    /* margin-bottom: 32px; */
 }
 
 .section__heading {
@@ -26,23 +23,6 @@ section {
     border-radius: 8px;
     border-bottom: 6px solid var(--primary-color);
     transition: all 0.3s ease;
-}
-
-.back-to-top {
-    position: fixed;
-    bottom: 4%;
-    right: 1.5%;
-    width: 48px;
-    height: 48px;
-    border-radius: 48px;
-    background-color: #fdeec9;
-    box-shadow: var(--card-shadow);
-    cursor: pointer;
-    opacity: 10%;
-    transition: all 0.5s ease;
-}
-.back-to-top:hover {
-    opacity: 100%;
 }
 
 /* ---------- PROFILE ---------- */
@@ -71,9 +51,9 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
 }
-/* .profile-card:hover {
+.profile-card:hover {
     box-shadow: var(--multiple-shadow);
-} */
+}
 
 .profile__banner {
     background-color: #803700;
@@ -168,25 +148,7 @@ section {
 
 /* --------- INTERESTS SECTION ------------- */
 .interests__section {
-    height: 720px;
-}
-.interests__banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-}
-.interests__banner img {
-    border-radius: 32px;
-    width: 720px;
-    height: 420px;
-}
-
-.control-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    background-color: #282828;
+    min-height: 720px;
 }
 
 /* -------------- RESPONSIVE -------------- */

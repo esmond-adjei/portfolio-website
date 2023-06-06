@@ -12,6 +12,7 @@ const Card = ({ imageSrc, title, icons, description, readMoreLink, viewProjectLi
         </div>
       <div className="card__details">
         <h2 className="card__title">{title}</h2>
+        <small className="card__subtitle">Subtitle</small>
         <div className="card__icons">
           {icons.map((icon, index) => (
             <FontAwesomeIcon icon={icon} key={index} className="card__icon" />

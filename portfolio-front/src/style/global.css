@@ -1,10 +1,10 @@
 /* global variables */
 :root {
     /* THEME COLORS*/
-    --primary-color: #2c3e50;
-    --light-main: #6fb99b;
-    --secondary-color: #d6941a;
-    --light-secondary: #11296e;
+    --primary-color: rgb(26, 26, 26); /* #2c3e50; */
+    --light-main: #909090; /* #6fb99b; */
+    --secondary-color: #d1d1d1; /*#d6941a; */
+    --light-secondary: #bebebe; /* #11296e; */
 
     /* CUSTOM COLORS */
     --yellow: #e3d081;
