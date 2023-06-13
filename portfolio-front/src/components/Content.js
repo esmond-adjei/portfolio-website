@@ -13,7 +13,7 @@ import fist from '../images/stock/fist.jpg';
 import militaryRobot from '../images/stock/military-robot-dog.png';
 import sadStudent from '../images/stock/sad-student.jpg';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 import { faSquareJs, faPython, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 // import {linkedin.svg, square-github.svg, square-twitter.svg} from '../../images';
@@ -135,21 +135,21 @@ function MainContent() {
                     <Sqcard backImage={sadStudent} cardType={'sqCard'}/>
                 </div>
             </section>
-
+{/* blog section */}
             <section className='blog__section'>
                 <h2 className='section__heading'>BLOG</h2>
                 <div className='blog_posts'>
                     <Sqcard backImage={sadStudent} cardType={'sqCard2'}/>
-                    <Sqcard backImage={fist} cardType={'sqCard2'}/>
+                    <Sqcard backImage={fist} cardType={'sqCard2'}/>xc
                     <Sqcard backImage={kidEngineer} cardType={'sqCard2'}/>
                 </div>
             </section>
+{/* interest section */}
             <section className='interests__section'>
                 <h2 className='section__heading'>INTERESTS</h2>
                 <SlidingImage images={[kidEngineer, robotOnDesk, militaryRobot, fist, sadStudent]}/>
             </section>
             <BackToTopButton />
-
         </main>
     );
 };

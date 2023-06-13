@@ -8,7 +8,7 @@ function contact({icon, contactType, contactDetail}) {
                 {icon}
             </div>
             <small>{contactType}</small>
-            <p>{contactDetail}</p>
+            <p><a href='./'>{contactDetail}</a></p>
         </div>
      );
 }

@@ -1,8 +1,8 @@
 
 .footer__content {
     margin: 10px;
-    color: #fff;
-    background-color: var(--primary-color);
+    color: var(--white);
+    background-color: var(--dark-text);
 }
 
 .footer__info {
@@ -27,10 +27,10 @@
 }
 
 .footer__links li a {
-    color: #f8f8f8;
+    color: var(--accent-main);
     text-decoration: none;
 }
 
 .footer__links li a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-secondary);
 }
