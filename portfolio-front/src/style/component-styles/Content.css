@@ -145,6 +145,10 @@ section {
     justify-content: center;
 }
 
+.more-projects__section .section__heading {
+    color: var(--light-secondary);
+}
+
 /* --------- INTERESTS SECTION ------------- */
 .interests__section {
     min-height: 720px;

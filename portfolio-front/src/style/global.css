@@ -50,7 +50,7 @@
 body {
     margin: 0;
     font-family: 'karla', 'montserrat', 'poppins', sans-serif;
-    background-color: #eeeeee;
+    background-color: var(--white);
     font-size: 16px;
 }
 
