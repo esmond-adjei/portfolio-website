@@ -34,7 +34,7 @@
 
 .card__title {
     margin: 0;
-    color: var(--dark-main);
+    color: var(--dark-100);
 }
 
 .card__subtitle {
@@ -55,12 +55,13 @@
 
 .card__icons svg {
     color: var(--dark-grey);
+    opacity: 0.6;
     height: 24px;
-    transition: color 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .card__icons svg:hover {
-    color: var(--accent-secondary);
+    opacity: 1;
 }
 
 .card__description {
@@ -80,12 +81,12 @@
     padding: 8px 16px;
     border-radius: 8px;
     text-decoration: none;
-    background-color: var(--accent-main);
-    color: var(--dark-text);
+    background-color: var(--light-100);
+    color: var(--dark-100);
     transition: all 0.4s ease;
 }
 
 .card__link:hover {
-    background-color: var(--accent-secondary);
-    color: var(--white);
+    background-color: var(--dark-100);
+    color: var(--light-100);
 }

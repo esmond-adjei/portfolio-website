@@ -34,12 +34,10 @@ nav ul {
 .nav__links {
     padding: 8px 16px;
     border-radius: 12px;
-    color: var(--dark-text);
-    background-color: var(--light-secondary);
+    color: var(--dark-100);
     transition: all 0.2s ease-in-out;
 }
 
 .nav__links:hover {
-    color: var(--light-secondary);
-    background-color: var(--accent-secondary);
+    background-color: var(--light-50);
 }

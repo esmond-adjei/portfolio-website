@@ -1,25 +1,30 @@
 /* global variables */
 :root {
-    /* THEME COLORS */
-    /* caramel */
-    --light-main: #C38154;
+    /* THEME COLORS 1*/
+    /* --light-main: #C38154; */
     /* chestnut */
-    --dark-main: #884A39;
+    /* --dark-main: #884A39; */
+    /* chocolate */
+    /* --very-dark-main: #7B3F00; */
     /* wheat */
-    --light-secondary: #F9E0BB;
+    /* --light-secondary: #F9E0BB; */
     /* earth yellow */
-    --accent-main: #FFC26F;
+    /* --accent-main: #FFC26F; */
     /* zomp */
-    --accent-secondary: #47A992;
+    /* --accent-secondary: #47A992; */
 
-    /* THEME COLORS (DEPRECATED) */
-    --primary-color: rgb(26, 26, 26); /* #2c3e50; */
-    --light-main-0: #909090; /* #6fb99b; */
-    --secondary-color: #d1d1d1; /*#d6941a; */
-    --light-secondary-0: #bebebe; /* #11296e; */
+    /* THEME COLORS 2*/
+    --light-50: #F9E0BB;
+    --light-100: #FFC26F;
+    --choco-gold: #FF9C34;
+    --choco-tan: #7B3F00;
+    --dark-50: #2d1803;
+    --dark-100: #231200;
+
 
     /* CUSTOM COLORS */
     --white: #fefefe;
+    --whitish: #f3f3f3;
     --grey: #efefef;
     --dark-grey: #909090;
 
@@ -28,11 +33,11 @@
     --dark-text: rgb(26, 26, 26);
 
     /* SHADOWS & GRADIENTS */
-    --raw-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --orange-gradient: radial-gradient( circle farthest-corner at 64% 24%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );    
+    --brown-gradient: linear-gradient(45deg, #772f1a 0%, #f2a65a 75%);
+    
+
     --card-shadow: 0px 3px 6px 0px rgba(140, 149, 159, 0.15);
-    --background-gradient: linear-gradient(90deg, rgba(180, 34, 195, 0.33) 0%, rgba(45, 253, 195, 0.17) 100%);
-    --light-gradient: linear-gradient(158deg, rgba(204, 204, 204, 1) 0%, rgba(172, 133, 175, 1) 55%, rgba(80, 80, 80, 1) 100%);
-    --orange-gradient: radial-gradient( circle farthest-corner at 64% 24%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
     --multiple-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
                         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
                         0 12.5px 10px rgba(0, 0, 0, 0.06),

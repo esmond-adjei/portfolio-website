@@ -2,7 +2,8 @@
 .footer__content {
     margin: 10px;
     color: var(--white);
-    background-color: var(--dark-text);
+    border-radius: 32px;
+    background-color: var(--dark-100);
 }
 
 .footer__info {
@@ -27,10 +28,15 @@
 }
 
 .footer__links li a {
-    color: var(--accent-main);
+    color: var(--white);
     text-decoration: none;
 }
 
 .footer__links li a:hover {
-    color: var(--accent-secondary);
+    color: var(--choco-gold);
+}
+
+.footer_copyright {
+    border-radius: 0 0 32px 32px;
+    background-color: var(--dark-50);
 }

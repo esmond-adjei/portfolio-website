@@ -1,6 +1,6 @@
 .contact-slip {
-    padding: 8px 0;
-    margin: 16px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
     height: 56px;
     font-size: 14px;
     border-bottom: 1px solid #dfdfdf;
@@ -17,9 +17,9 @@
     margin-right: 16px;
     border-radius: 6px;
     color: var(--dark-text);
-    background-color: rgb(209, 161, 19);
+    background-color: var(--choco-gold);
     background: var(--orange-gradient);
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .contact-slip:hover .icon {
@@ -27,18 +27,22 @@
     cursor: pointer;
 }
 .contact-slip:hover a {
-    color: var(--accent-secondary);
+    color: var(--choco-gold);
+}
+.contact-slip:hover {
+  background-color: var(--grey);
+  border-radius: 8px;
 }
 
 .contact-slip small {
     color: var(--light-text);
 }
 
-/* big logo */
+/*---------- big logo ---------- */
 .big-logo {
-    opacity: 24%;
-    transition: all .4s ease-out;
-    animation: marquee 3.2s linear infinite;
+  opacity: 24%;
+  transition: all .4s ease-out;
+  animation: marquee 4s linear infinite;
 }
 
 .big-logo:hover {
@@ -82,7 +86,7 @@
   bottom: var(--heading-default-position);
   
   font-size: 32px;
-  color: var(--accent-main);
+  color: var(--choco-gold);
   background-color:#7f7f7f59;
   
   width: 100%;
@@ -100,8 +104,8 @@
     font-size: 14px;
     font-weight: 200;
     color: var(--white);
-    background-color: var(--dark-main);
-    transition: all 0.40s ease-in;
+    background-color: var(--dark-100);
+    transition: all 0.3s ease-in;
 }
 .sqCard:hover .card_text {
     bottom: var(--text-hover-position);
@@ -112,7 +116,6 @@
 
 /* ----------- square card version 2 ---------- */
 .sqCard2 {
-    box-shadow: 0px 4px 4px -2px #9f9f9f;
     background-size: contain;
     background-position: top;
     --text-position: 50%;
@@ -120,24 +123,26 @@
 
 .sticker {
   position: absolute;
+  padding: 16px;
   width: 75px;
   height: 75px;
-  background-color: var(--accent-main);
   top: 50px;
   right: 10px;
-  border-radius: 16px;
   text-align: center;
-  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--light-50);
+  box-shadow: var(--multiple-shadow);
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: var(--multiple-shadow);
+  
   transition: all 0.40s ease;
   opacity: 0;
 }
 .sticker:hover {
   border-radius: 64px;
-  background-color: var(--accent-secondary);
+  background-color: var(--light-100);
 }
 
 .sqCard2:hover .sticker {
@@ -158,129 +163,140 @@
 
 /* ------------ email forms --------------- */
 .email-form {
-    width: 25%;
+    min-width: 300px;
+    width: 30%;
+    padding: 16px 32px;
+    border-radius: 16px;
+    background-color: var(--dark-50);
   }
+
+.email-form h2 {
+  color: var(--light-100);
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
   
-  label {
-    display: block;
-    margin-bottom: 4px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-      width: 100%;
-      padding: 8px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      border: 2px solid var(--accent-main);
-      outline-color: var(--accent-main);
-      font-family: 'montserrat', 'open sans';
-      transition: outline-color 400ms ease;
-    }
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid var(--light-100);
+  outline-color: var(--choco-gold);
+  font-family: 'montserrat', 'open sans';
+  transition: outline-color 400ms ease;
+}
     
 input[type="text"]:focus-visible,
 input[type="email"]:focus-visible,
 textarea:focus-visible {
-    outline: 2px solid var(--accent-secondary);
-    outline-offset: -2px;
+  outline: 1px solid var(--choco-gold);
+  outline-offset: -2px;
 }
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: var(--accent-main);
-    color: var(--dark-text);
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.4s ease;
-  }
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--light-100);
+  color: var(--dark-text);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s ease;
+}
   
   button:hover {
-    background-color: var(--accent-secondary);
+    color: var(--white);
+    background-color: var(--choco-gold);
   }
 
 /* ---------- IMAGE SLIDER ----------- */
 .sliding-image{
-    position: relative;
-    width: 83%;
-    height: 400px;
-    margin: auto;
-    border-radius: 32px;
-    overflow: hidden;
-  }
+  position: relative;
+  width: 83%;
+  height: 400px;
+  margin: auto;
+  border-radius: 32px;
+  overflow: hidden;
+}
   
-  .image-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-  }
-  
-  .slide {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-  }
-  
-  .slide.active {
-    opacity: 1;
-  }
-  
-  .dots-container {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    padding: 8px 16px;
-    background-color: var(--light-text);
-    border-radius: 24px;
-    transform: translateX(-50%);
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
 
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .dot {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--grey);
-    cursor: pointer;
-    transition: all 0.4s ease;
-  }
-  .dot.inactive:hover {
-      box-shadow: 0 8px 8px -1px #333;
-      background-color: var(--accent-secondary);
-  }
-  
-  .dot.active {
-    background-color: var(--accent-main);
-  }
-  
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  padding: 8px 16px;
+  background-color: var(--light-text);
+  border-radius: 24px;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--grey);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.dot.inactive:hover {
+    box-shadow: 0 8px 8px -1px #333;
+    background-color: var(--choco-gold);
+}
+
+.dot.active {
+  background-color: var(--choco-tan);
+}
+
 /* ---------- BACK TO TOP ------------- */
 .back-to-top-button {
-    position: fixed;
-    bottom: 80px;
-    right: 40px;
-    padding: 10px 15px;
-    background-color: var(--accent-main);
-    color: var(--dark-text);
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: var(--multiple-shadow);
-  }
-  
-  .back-to-top-button:hover {
-    opacity: 0.8;
-    color: var(--white);
-  }
-  
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 80px;
+  right: 40px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--dark-text);
+  border: none;
+  border-radius: 100%;
+  background-color: var(--light-100);
+  box-shadow: var(--multiple-shadow);
+  transition: all 0.2s ease;
+}
+
+.back-to-top-button:hover {
+  color: var(--white);
+}
