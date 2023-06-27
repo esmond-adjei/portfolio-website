@@ -1,6 +1,6 @@
 .banner {
     height: 720px;
-    background-image: url('../../images/kid-engineer.jpg');
+    /* background-image: url('../../images/kid-engineer.jpg'); */
     background-position: center;
     background-size: cover;
     
@@ -22,7 +22,7 @@
 
 .banner-text h1 {
     font-size: 4.5rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .banner-text p {
@@ -49,6 +49,7 @@
 
 /* --------- CTA ------------- */
 .btn {
+    width: var(--cta-width);
     color: #333;
     font-size: 1.2rem;
     border: none;

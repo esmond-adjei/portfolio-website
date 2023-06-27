@@ -1,5 +1,8 @@
 /* global variables */
 :root {
+    /* GLOBAL DIMENSIONS */
+    --cta-width: 192px;
+    --card-width: 320px;
     /* THEME COLORS 1*/
     /* --light-main: #C38154; */
     /* chestnut */
@@ -62,16 +65,6 @@ body {
 a {
     text-decoration: none;
     color: var(--dark-text)
-}
-
-/* development styles */
-.dev--border {
-    border: 3px solid green;
-}
-
-.dev--container {
-    margin: 5px;
-    background-color: #cccccc;
 }
 
 /* body {

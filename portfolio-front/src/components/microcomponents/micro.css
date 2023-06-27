@@ -129,7 +129,7 @@
   top: 50px;
   right: 10px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 33%;
   background-color: var(--light-50);
   box-shadow: var(--multiple-shadow);
   
@@ -220,7 +220,6 @@ button[type="submit"] {
 /* ---------- IMAGE SLIDER ----------- */
 .sliding-image{
   position: relative;
-  width: 83%;
   height: 400px;
   margin: auto;
   border-radius: 32px;

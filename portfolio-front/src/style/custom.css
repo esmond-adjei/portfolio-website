@@ -10,3 +10,7 @@
 
 /* mini componenets */
 @import "./component-styles/card.css";
+
+/* responsive design (1) desktop first, (2) mobile*/
+@import "./responsive.css";
+    

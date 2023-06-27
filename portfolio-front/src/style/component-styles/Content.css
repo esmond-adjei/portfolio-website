@@ -1,5 +1,5 @@
 section {
-    padding: 48px 96px;
+    padding: 48px;
     min-height: 320px;
     background-color: var(--white);
 }
@@ -36,10 +36,11 @@ section {
     background-color: var(--grey);
     border-radius: 16px;
     padding: 24px;
+    gap: 32px;
 }
 
 .profile-card {
-    width: 320px;
+    min-width: var(--card-width);
     min-height: 320px;
     border-radius: 16px;
     background-color: var(--white);
@@ -138,7 +139,8 @@ section {
 
 /* ----------- MORE PROJECTS SECTION -------- */
 .more-projects__section {
-    padding: 96px;
+    /* padding: 96px; */
+    align-items: center;
     background-color: var(--dark-text);
 }
 .carousel_of_cards, .blog_posts {
@@ -151,34 +153,4 @@ section {
 /* --------- INTERESTS SECTION ------------- */
 .interests__section {
     min-height: 720px;
-}
-
-/* -------------- RESPONSIVE -------------- */
-@media (max-width: 767px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content__column {
-        width: 100%;
-    }
-
-    .profile__section {
-        height: 200px;
-        margin: 30px 0 30px 0;
-        position: initial;
-        width: 124%;
-        flex-direction: row;
-    }
-
-
-    .profile__contact {
-        margin: 0 15px;
-        width: 80%;
-    }
-
-    nav ul {
-        display: none;
-    }
 }
