@@ -39,7 +39,7 @@
 }
 
 /* SAMSUNG GALAXY S20 ULTRA */
-@media (max-width: 560px) {
+@media (max-width: 640px) {
 
     /* BANNER */
     .banner-text h1{
@@ -87,13 +87,8 @@
         height: fit-content;
     }
 
-    /* MORE PROJECTS */
-    .carousel_of_cards, .blog_posts{
-        flex-direction: column;
-    }
-
-    /* FOOTER */
-    .footer__info {
+    /* MORE PROJECTS & FOOTER */
+    .carousel_of_cards, .blog_posts, .footer__info {
         flex-direction: column;
         align-items: center;
     }
