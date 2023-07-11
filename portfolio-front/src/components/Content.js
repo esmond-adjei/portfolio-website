@@ -9,7 +9,7 @@ import BackToTopButton from './microcomponents/backToTop';
 import Alex from '../images/alex.jpg'
 import kidEngineer from '../images/kid-engineer.jpg'
 import robotOnDesk from '../images/stock/home-made-robot-desk.jpg';
-import fist from '../images/stock/fist.jpg';
+import panda from '../images/stock/panda.jpg';
 import militaryRobot from '../images/stock/military-robot-dog.png';
 import sadStudent from '../images/stock/sad-student.jpg';
 
@@ -108,7 +108,7 @@ function MainContent() {
                     viewProjectLink={cardData.viewProjectLink}
                 />
                 <Card
-                    imageSrc={fist}
+                    imageSrc={panda}
                     title={cardData.title}
                     icons={cardData.icons}
                     description={cardData.description}
@@ -140,13 +140,13 @@ function MainContent() {
                 <div className='blog_posts'>
                     <Sqcard backImage={kidEngineer} cardType={'sqCard2'}/>
                     <Sqcard backImage={sadStudent} cardType={'sqCard2'}/>
-                    <Sqcard backImage={fist} cardType={'sqCard2'}/>
+                    <Sqcard backImage={panda} cardType={'sqCard2'}/>
                 </div>
             </section>
 {/* interest section */}
             <section className='interests__section'>
                 <h2 className='section__heading'>INTERESTS</h2>
-                <SlidingImage images={[kidEngineer, robotOnDesk, militaryRobot, fist, sadStudent]}/>
+                <SlidingImage images={[kidEngineer, robotOnDesk, militaryRobot, panda, sadStudent]}/>
             </section>
             <BackToTopButton />
         </main>

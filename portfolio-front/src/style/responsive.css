@@ -2,7 +2,7 @@
 /* IPAD AIR */
 @media (max-width: 820px) {
     nav ul::before {
-        content: url("../images/menu.svg");
+        content: url("../images/22-logo.jpg");
         width: 40px;
         height: 40px;
         position: absolute;
@@ -28,7 +28,9 @@
         width: 32%;
         font-size: larger;
     }
-    
+    .banner-image {
+        display: none;
+    }
     /* BIOGRAPHY */
     .profile__section, .profile__text {
         width: 100%;
@@ -44,18 +46,40 @@
         padding: 8px 32px;
     }
     /* BANNER */
+    .banner { 
+        --billboard-height: 100vh;
+        height: var(--billboard-height);
+    }
     .banner-text h1{
         font-size: 3rem;
         width: 50%;
     }
     .banner-text p {
-        width: 80%;   
+        width: 80%;
+    
+        position: absolute;
+        z-index: 15;
+        background-color: var(--light-100);
+        padding: 16px;
+        border-radius: 12px;
     }
     .banner-text .btn {
         position: absolute;
-        bottom: -100px;
-        left: calc( 45% - 0.5 * var(--cta-width) );
+        z-index: 15;
+        /* bottom: -100px; */
+        /* left: calc( 45% - 0.5 * var(--cta-width) ); */
+        top: 480px;
+        left: 0;
     }
+    .banner-image {
+        display: block;
+        position: absolute;
+        right: -123%;
+        top: 0%;
+        transform: scale(0.8);
+        z-index: 1;
+    }
+
 
     /* BIOGRAPHY */
     .profile {
@@ -74,7 +98,11 @@
 
     /* SKILL SECTION */
     .skills__section {
-        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .skill_logos {
+        gap: 50px;
     }
     /* CARD */
     .card {

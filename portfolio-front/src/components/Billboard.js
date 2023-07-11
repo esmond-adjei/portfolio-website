@@ -1,4 +1,5 @@
 import React from 'react';
+import me from '../images/stock/esmond-me-low.png';
 
 
 function Billboard() {
@@ -11,6 +12,7 @@ function Billboard() {
                 <p>Discover my work and learn more about what I do.</p>
                 <button className="btn">View Portfolio</button>
             </div>
+            <img src={me} alt="esmond" className='banner-image'/>
         </div>
     );
 }
