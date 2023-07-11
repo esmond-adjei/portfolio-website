@@ -188,7 +188,6 @@ textarea {
   margin-bottom: 16px;
   border: 1px solid var(--light-100);
   outline-color: var(--choco-gold);
-  font-family: 'montserrat', 'open sans';
   transition: outline-color 400ms ease;
 }
     

@@ -138,9 +138,9 @@ function MainContent() {
             <section className='blog__section'>
                 <h2 className='section__heading'>BLOG</h2>
                 <div className='blog_posts'>
+                    <Sqcard backImage={kidEngineer} cardType={'sqCard2'}/>
                     <Sqcard backImage={sadStudent} cardType={'sqCard2'}/>
                     <Sqcard backImage={fist} cardType={'sqCard2'}/>
-                    <Sqcard backImage={kidEngineer} cardType={'sqCard2'}/>
                 </div>
             </section>
 {/* interest section */}
