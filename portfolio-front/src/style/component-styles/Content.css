@@ -123,15 +123,33 @@ section {
     background-color: var(--grey);
 }
 .skill_logos {
+    position: relative;
     width: 80%;
     margin: auto;
     overflow: hidden;
     
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
+    border-radius: 12px;
+    padding: 12px;
 }
-
+.marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  .marquee:before {
+    left: 0;
+    background: linear-gradient(to right, var(--grey) 0%, transparent 100%);
+}
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, var(--grey) 0%, transparent 100%);
+  }
 /* -------------- PROJECTS -------------- */
 .projects__section {
     background-color: var(--light-50);

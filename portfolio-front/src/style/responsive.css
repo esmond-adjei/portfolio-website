@@ -40,7 +40,9 @@
 
 /* SAMSUNG GALAXY S20 ULTRA */
 @media (max-width: 640px) {
-
+    .header {
+        padding: 8px 32px;
+    }
     /* BANNER */
     .banner-text h1{
         font-size: 3rem;
@@ -70,6 +72,10 @@
         min-width: 100%;
     }
 
+    /* SKILL SECTION */
+    .skills__section {
+        padding: 0px;
+    }
     /* CARD */
     .card {
         flex-direction: column;

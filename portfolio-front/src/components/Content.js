@@ -16,7 +16,6 @@ import sadStudent from '../images/stock/sad-student.jpg';
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 import { faSquareJs, faPython, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-// import {linkedin.svg, square-github.svg, square-twitter.svg} from '../../images';
 import sqLinkedin from '../images/square-linkedin.svg';
 import sqGithub from '../images/square-github.svg';
 import sqTwitter from '../images/square-twitter.svg';
@@ -82,7 +81,7 @@ function MainContent() {
 {/* skills */}
             <section className='skills__section'>
                 <h2 className='section__heading'>SKILLS</h2>
-                <div className='skill_logos'>
+                <div className='skill_logos marquee'>
                     <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
                     <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
                     <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
@@ -95,7 +94,6 @@ function MainContent() {
                     <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
                     <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
                     <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
-                    <i className='fab fa-free-code-camp'/>
                 </div>
             </section>
 

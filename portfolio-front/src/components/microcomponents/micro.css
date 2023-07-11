@@ -55,8 +55,8 @@
       transform: translateX(0%);
     }
     100% {
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+      -webkit-transform: translateX(-500%);
+      transform: translateX(-500%);
     }
   }
 
@@ -231,6 +231,18 @@ button[type="submit"] {
   width: 100%;
   height: 100%;
   transition: transform 0.3s ease;
+  position: relative;
+}
+
+.image-container::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  content: "";
+  z-index: 10;
+  background: linear-gradient(to right, black 0%, transparent 100%);
 }
 
 .slide {
@@ -240,6 +252,7 @@ button[type="submit"] {
   object-fit: cover;
   transition: opacity 0.3s ease;
   opacity: 0;
+  position: relative;
 }
 
 .slide.active {
