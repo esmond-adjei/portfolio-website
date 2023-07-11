@@ -95,6 +95,7 @@ function MainContent() {
                     <BigLogo imageSrc={sqGithub} imageAlt={'github'}/>
                     <BigLogo imageSrc={sqLinkedin} imageAlt={'linkedin'}/>
                     <BigLogo imageSrc={sqTwitter} imageAlt={'twitter'}/>
+                    <i className='fab fa-free-code-camp'/>
                 </div>
             </section>
 

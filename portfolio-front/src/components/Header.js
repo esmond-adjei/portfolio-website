@@ -1,4 +1,4 @@
-import logoGold from '../images/22-gold-plain.png';
+import logoGold from '../images/22-logo.jpg';
 
 import React from 'react';
 

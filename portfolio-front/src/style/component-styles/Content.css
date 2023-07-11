@@ -153,4 +153,5 @@ section {
 /* --------- INTERESTS SECTION ------------- */
 .interests__section {
     min-height: 720px;
+    padding: 0 10%;
 }

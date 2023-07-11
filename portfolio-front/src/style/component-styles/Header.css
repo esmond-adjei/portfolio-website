@@ -23,6 +23,7 @@ header {
 
 header .logo {
     width: 48px;
+    border-radius: 12px;
 }
 
 nav ul {
@@ -40,5 +41,5 @@ nav ul {
 }
 
 .nav__links:hover {
-    background-color: var(--light-50);
+    background-color: var(--light-100);
 }
